@@ -121,8 +121,8 @@ public class SecondPart {
         BrowserUtility.wait(2);
         driver.findElement(By.xpath( "//a[contains(text(),'404')]" )).click();
         BrowserUtility.wait(2);
-        WebElement statusCode301Message = driver.findElement(By.xpath("//div[@class='example']/p"));
-        Assert.assertTrue(statusCode301Message.isDisplayed());
+        WebElement statusCode404Message = driver.findElement(By.xpath("//div[@class='example']/p"));
+        Assert.assertTrue(statusCode404Message.isDisplayed());
     }
 
 
@@ -136,8 +136,8 @@ public class SecondPart {
         BrowserUtility.wait(2);
         driver.findElement(By.xpath( "//a[contains(text(),'500')]" )).click();
         BrowserUtility.wait(2);
-        WebElement statusCode301Message = driver.findElement(By.xpath("//div[@class='example']/p"));
-        Assert.assertTrue(statusCode301Message.isDisplayed());
+        WebElement statusCode500Message = driver.findElement(By.xpath("//div[@class='example']/p"));
+        Assert.assertTrue(statusCode500Message.isDisplayed());
     }
 
 
